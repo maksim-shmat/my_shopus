@@ -3,6 +3,12 @@ import datetime
 from django.http import HttpResponse
 from django.contrib import admin
 from .models import Order, OrderItem
+from django.urls import reverse
+from django.utils.safestring import mark_safe
+
+def order_detail(obj):
+    return mark_safe('<a href="{}">View</a>'.format(reverse('orders:admin_order_detail', args=[obj.id])))
+
 
 def export_to_csv(modeladmin, request, queryset):
     opts = modeladmin.model._meta
@@ -28,6 +34,7 @@ export_to_csv.short_description = 'Export to CSV'
 class OrderItemInline(admin.TabularInline):
     model = OrderItem
     raw_id_fields = ['product']
+
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
