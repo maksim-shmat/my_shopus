@@ -1,0 +1,74 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-10 14:42+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: orders/templates/orders/order/create.html:5
+#: orders/templates/orders/order/create.html:9
+msgid "Checkout"
+msgstr "Падцвердзiць"
+
+#: orders/templates/orders/order/create.html:12
+msgid "Your order"
+msgstr "Ваш чэк"
+
+#: orders/templates/orders/order/create.html:22
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "\t    \"%(code)s\" (%(discount)s%% off)\n"
+#| "\t  "
+msgid ""
+" \"%(code)s\" (%(discount)s%% off)\n"
+"\t  "
+msgstr ""
+" \"%(code)s\" (%(discount)s%% off)\n"
+"\t  "
+
+#: orders/templates/orders/order/create.html:28
+msgid "Total"
+msgstr "Итог"
+
+#: orders/templates/orders/order/create.html:32
+msgid "Place order"
+msgstr "Заказаць"
+
+#: orders/templates/orders/order/created.html:5
+#: orders/templates/orders/order/created.html:9
+msgid "Thank you"
+msgstr "Дзякуй"
+
+#: orders/templates/orders/order/created.html:10
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "  <p>Your order has been successfully completed. Your order number "
+#| "is<strong>%(order.id)s</strong>.</p>\n"
+#| "  "
+msgid ""
+"\n"
+"    <p>Your order has been successfully completed. Your order number "
+"is<strong>%(order.id)s</strong>.</p>\n"
+"  "
+msgstr ""
+"\n"
+"    <p>Ваш заказ паспяхова падцверджаны. Ваш заказ нумар <strong>"
+"%(order_id)s</srtong>.</p\n"
+"  "

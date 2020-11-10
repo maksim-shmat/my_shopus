@@ -1,0 +1,173 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-10 14:42+0300\n"
+"PO-Revision-Date: 2020-11-09 13:00+0000\n"
+"Last-Translator: b'  <shm@worker.com>'\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.5\n"
+
+#: cart/templates/cart/detail.html:6 cart/templates/cart/detail.html:10
+msgid "Your shopping cart"
+msgstr "Ваша торба"
+
+#: cart/templates/cart/detail.html:14
+msgid "Image"
+msgstr "Каляка-маляка"
+
+#: cart/templates/cart/detail.html:15
+msgid "Product"
+msgstr "Тавар"
+
+#: cart/templates/cart/detail.html:16
+msgid "Quantity"
+msgstr "Колькасць"
+
+#: cart/templates/cart/detail.html:17 cart/templates/cart/detail.html:40
+msgid "Remove"
+msgstr "Вярнуць"
+
+#: cart/templates/cart/detail.html:18
+msgid "Unit price"
+msgstr "Цана за штуку"
+
+#: cart/templates/cart/detail.html:19
+msgid "Price"
+msgstr "Цана"
+
+#: cart/templates/cart/detail.html:48
+msgid "Subtotal"
+msgstr "Падытог"
+
+#: cart/templates/cart/detail.html:53
+#, python-format
+msgid ""
+"\n"
+"\t    <td>\"%(code)s\" coupon (%(discount)s%% off)</td>\n"
+"\t  "
+msgstr ""
+
+#: cart/templates/cart/detail.html:63
+msgid "Total"
+msgstr "Итог"
+
+#: cart/templates/cart/detail.html:73
+msgid "People who bought this also bought"
+msgstr "Магчыма вы захочаце i гэта"
+
+#: cart/templates/cart/detail.html:84
+msgid "Apply a coupon"
+msgstr "Дадаць купон"
+
+#: cart/templates/cart/detail.html:87
+msgid "Apply"
+msgstr "Дадаць"
+
+#: cart/templates/cart/detail.html:91
+msgid "Continue shopping"
+msgstr "Калiласка купляй шчэ"
+
+#: cart/templates/cart/detail.html:93
+msgid "Checkout"
+msgstr "Падцвердзиць"
+
+#: payment/urls.py:8
+msgid "process/"
+msgstr ""
+
+#: payment/urls.py:9
+msgid "done/"
+msgstr ""
+
+#: payment/urls.py:10
+msgid "canceled/"
+msgstr ""
+
+#: shop/templates/shop/base.html:7
+msgid " My shop"
+msgstr "Крама"
+
+#: shop/templates/shop/base.html:12
+msgid "My shop"
+msgstr "Крама"
+
+#: shop/templates/shop/base.html:17
+#, fuzzy
+#| msgid "language"
+msgid "Language"
+msgstr "Мова"
+
+#: shop/templates/shop/base.html:33
+#, fuzzy
+msgid "Your cart"
+msgstr "Ваша торба"
+
+#: shop/templates/shop/base.html:35
+#, python-format
+msgid ""
+"\n"
+"\t      %(total_items)s item%(total_items_plural)s,\n"
+"\t      $%(total_price)s\n"
+"\t    "
+msgstr ""
+
+#: shop/templates/shop/base.html:41
+msgid "Your cart is empty."
+msgstr "Пустая торба"
+
+#: shop/templates/shop/product/detail.html:18
+msgid "Add to cart"
+msgstr "Пакласцi у торбу"
+
+#: shop/templates/shop/product/list.html:6
+#: shop/templates/shop/product/list.html:24
+#, fuzzy
+#| msgid "Product"
+msgid "Products"
+msgstr "Тавар"
+
+#: shop/templates/shop/product/list.html:11
+msgid "Categories"
+msgstr "Катэгорыi"
+
+#: shop/templates/shop/product/list.html:14
+msgid "All"
+msgstr "Усе"
+
+#, fuzzy
+#~| msgid "Coupon"
+#~ msgid "coupons/"
+#~ msgstr "Купон"
+
+#~ msgid "Coupon"
+#~ msgstr "Купон"
+
+#~ msgid "English"
+#~ msgstr "Па англiйску"
+
+#~ msgid "Belarusian"
+#~ msgstr "Трасяначка"
+
+#, fuzzy
+#~ msgid "Your shoping cart"
+#~ msgstr "Ваша торба"
+
+#~ msgid "Your order"
+#~ msgstr "Ваш чэк"
+
+#~ msgid "Place order"
+#~ msgstr "Заказаць"

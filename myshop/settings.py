@@ -10,10 +10,13 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 import os
-from pathlib import Path
+#from pathlib import Path
+#from django.utils.translation import gettext_lazy as _
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+#BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,11 +44,16 @@ INSTALLED_APPS = [
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
     'payment.apps.PaymentConfig',
+    'coupons.apps.CouponsConfig',
+    'rosetta',
+#    'parler',
+    'localflavor',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+#    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -81,7 +89,8 @@ WSGI_APPLICATION = 'myshop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+       # 'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
@@ -108,6 +117,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
+
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
@@ -124,22 +134,39 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR, 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-BRAINTREE_MERCHANT_ID = 'sfx9fp3bvpksw26s' # ID barigi
-BRAINTREE_PUBLIC_KEY = 'ypw93vcq2987dsqv'  # Publick key ORLY?
-BRAINTREE_PRIVATE_KEY = '0ffe6f492af92f7d11e4e58757b01d75' 
+BRAINTREE_MERCHANT_ID = 'sfx9fp3bvpksw26s'
+BRAINTREE_PUBLIC_KEY = 'ypw93vcq2987dsqv'
+BRAINTREE_PRIVATE_KEY = '0ffe6f492af92f7d11e4e58757b01d75'
 
 from braintree import Configuration, Environment
 
 Configuration.configure(
-        Environment.Sandbox,    # But Environment.Production for real job
+        Environment.Sandbox,
         BRAINTREE_MERCHANT_ID,
         BRAINTREE_PUBLIC_KEY,
         BRAINTREE_PRIVATE_KEY
 )
+
+#LOCALE_PATHS = (
+ #       os.path.join(BASE_DIR, 'locale/'),
+#)
+
+#PARLER_LANGUAGES = {
+ #       None: (
+  #          {'code': 'en'},
+   #         {'code': 'be'},
+    #    ),
+     #   'default': {
+      #      'fallback': 'en',
+       #     'hide_untranslated': False,
+       # }
+   # }

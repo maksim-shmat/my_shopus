@@ -1,6 +1,6 @@
 {% extends "shop/base.html" %}
-{% load i18n %}
 {% load static %}
+
 {% block title %}
   {% if category %}{{ category.name }}{% else %}{% trans "Products" %}{% endif %}
 {% endblock %}
