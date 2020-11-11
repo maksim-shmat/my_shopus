@@ -155,18 +155,3 @@ Configuration.configure(
         BRAINTREE_PUBLIC_KEY,
         BRAINTREE_PRIVATE_KEY
 )
-
-#LOCALE_PATHS = (
- #       os.path.join(BASE_DIR, 'locale/'),
-#)
-
-#PARLER_LANGUAGES = {
- #       None: (
-  #          {'code': 'en'},
-   #         {'code': 'be'},
-    #    ),
-     #   'default': {
-      #      'fallback': 'en',
-       #     'hide_untranslated': False,
-       # }
-   # }

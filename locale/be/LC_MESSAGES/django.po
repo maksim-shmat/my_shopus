@@ -23,35 +23,35 @@ msgstr ""
 
 #: cart/templates/cart/detail.html:6 cart/templates/cart/detail.html:10
 msgid "Your shopping cart"
-msgstr "Ваша торба"
+msgstr ""
 
 #: cart/templates/cart/detail.html:14
 msgid "Image"
-msgstr "Каляка-маляка"
+msgstr ""
 
 #: cart/templates/cart/detail.html:15
 msgid "Product"
-msgstr "Тавар"
+msgstr ""
 
 #: cart/templates/cart/detail.html:16
 msgid "Quantity"
-msgstr "Колькасць"
+msgstr ""
 
 #: cart/templates/cart/detail.html:17 cart/templates/cart/detail.html:40
 msgid "Remove"
-msgstr "Вярнуць"
+msgstr ""
 
 #: cart/templates/cart/detail.html:18
 msgid "Unit price"
-msgstr "Цана за штуку"
+msgstr ""
 
 #: cart/templates/cart/detail.html:19
 msgid "Price"
-msgstr "Цана"
+msgstr ""
 
 #: cart/templates/cart/detail.html:48
 msgid "Subtotal"
-msgstr "Падытог"
+msgstr ""
 
 #: cart/templates/cart/detail.html:53
 #, python-format
@@ -63,27 +63,27 @@ msgstr ""
 
 #: cart/templates/cart/detail.html:63
 msgid "Total"
-msgstr "Итог"
+msgstr ""
 
 #: cart/templates/cart/detail.html:73
 msgid "People who bought this also bought"
-msgstr "Магчыма вы захочаце i гэта"
+msgstr ""
 
 #: cart/templates/cart/detail.html:84
 msgid "Apply a coupon"
-msgstr "Дадаць купон"
+msgstr ""
 
 #: cart/templates/cart/detail.html:87
 msgid "Apply"
-msgstr "Дадаць"
+msgstr ""
 
 #: cart/templates/cart/detail.html:91
 msgid "Continue shopping"
-msgstr "Калiласка купляй шчэ"
+msgstr ""
 
 #: cart/templates/cart/detail.html:93
 msgid "Checkout"
-msgstr "Падцвердзиць"
+msgstr ""
 
 #: payment/urls.py:8
 msgid "process/"
@@ -99,22 +99,22 @@ msgstr ""
 
 #: shop/templates/shop/base.html:7
 msgid " My shop"
-msgstr "Крама"
+msgstr ""
 
 #: shop/templates/shop/base.html:12
 msgid "My shop"
-msgstr "Крама"
+msgstr ""
 
 #: shop/templates/shop/base.html:17
 #, fuzzy
 #| msgid "language"
 msgid "Language"
-msgstr "Мова"
+msgstr ""
 
 #: shop/templates/shop/base.html:33
 #, fuzzy
 msgid "Your cart"
-msgstr "Ваша торба"
+msgstr ""
 
 #: shop/templates/shop/base.html:35
 #, python-format
@@ -127,47 +127,47 @@ msgstr ""
 
 #: shop/templates/shop/base.html:41
 msgid "Your cart is empty."
-msgstr "Пустая торба"
+msgstr ""
 
 #: shop/templates/shop/product/detail.html:18
 msgid "Add to cart"
-msgstr "Пакласцi у торбу"
+msgstr ""
 
 #: shop/templates/shop/product/list.html:6
 #: shop/templates/shop/product/list.html:24
 #, fuzzy
 #| msgid "Product"
 msgid "Products"
-msgstr "Тавар"
+msgstr ""
 
 #: shop/templates/shop/product/list.html:11
 msgid "Categories"
-msgstr "Катэгорыi"
+msgstr ""
 
 #: shop/templates/shop/product/list.html:14
 msgid "All"
-msgstr "Усе"
+msgstr ""
 
 #, fuzzy
 #~| msgid "Coupon"
 #~ msgid "coupons/"
-#~ msgstr "Купон"
+#~ msgstr ""
 
 #~ msgid "Coupon"
-#~ msgstr "Купон"
+#~ msgstr ""
 
 #~ msgid "English"
-#~ msgstr "Па англiйску"
+#~ msgstr ""
 
 #~ msgid "Belarusian"
-#~ msgstr "Трасяначка"
+#~ msgstr ""
 
 #, fuzzy
 #~ msgid "Your shoping cart"
-#~ msgstr "Ваша торба"
+#~ msgstr ""
 
 #~ msgid "Your order"
-#~ msgstr "Ваш чэк"
+#~ msgstr ""
 
 #~ msgid "Place order"
-#~ msgstr "Заказаць"
+#~ msgstr ""
