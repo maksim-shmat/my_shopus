@@ -20,7 +20,7 @@ def order_create(request):
 
         if form.is_valid():
             order = form.save(commit=False)
-            if cart.coupon:
+            if cart .coupon:
                 order.coupon = cart.coupon
                 order.discount = cart.coupon.discount
             order.save()
@@ -34,7 +34,7 @@ def order_create(request):
             return render(request,
                           'orders/order/created.html',
                           {'cart': order})
-           # order_created.delay(order.id)
+            order_created.delay(order.id)
             request.session['order_id'] = order.id
             return redirect(reverse('payment:process'))
 

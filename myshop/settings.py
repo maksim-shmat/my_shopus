@@ -141,8 +141,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
 BRAINTREE_MERCHANT_ID = 'sfx9fp3bvpksw26s'
 BRAINTREE_PUBLIC_KEY = 'ypw93vcq2987dsqv'
 BRAINTREE_PRIVATE_KEY = '0ffe6f492af92f7d11e4e58757b01d75'
@@ -155,3 +153,8 @@ Configuration.configure(
         BRAINTREE_PUBLIC_KEY,
         BRAINTREE_PRIVATE_KEY
 )
+
+
+REDIS_HOST = 'localhost'
+REDIS_PORT = 6379
+REDIS_DB = 1
