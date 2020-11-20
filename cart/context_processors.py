@@ -1,3 +1,5 @@
+""" Docs """
+
 from .cart import Cart
 
 def cart(request):

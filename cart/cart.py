@@ -1,9 +1,12 @@
+""" Docs """
+
 from decimal import Decimal
 from django.conf import settings
 from shop.models import Product
 from coupons.models import Coupon
 
 class Cart(object):
+    """ docs """
 
     def __init__(self, request):
         """
