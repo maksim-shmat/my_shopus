@@ -1,3 +1,4 @@
+""" Docs. """
 import csv
 import datetime
 from django.http import HttpResponse
@@ -33,6 +34,7 @@ def export_to_csv(modeladmin, request, queryset):
 export_to_csv.short_description = 'Export to CSV'
 
 class OrderItemInline(admin.TabularInline):
+    """ docs. """
     model = OrderItem
     raw_id_fields = ['product']
 
@@ -44,6 +46,7 @@ order_pdf.short_description = 'Invoice'
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
+    """ docs. """
     list_display = ['id', 'first_name', 'last_name', 'email',
                     'address', 'postal_code', 'city', 'paid',
                     'created', 'updated', order_detail, order_pdf]

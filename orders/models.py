@@ -1,3 +1,4 @@
+""" Docs. """
 from django.db import models
 from shop.models import Product
 from decimal import Decimal
@@ -7,6 +8,7 @@ from coupons.models import Coupon
 #from django.utils.translation import gettext_lazy as _
 
 class Order(models.Model):
+    """ docs. """
     first_name = models.CharField('first name', max_length=50)
     last_name = models.CharField('last name', max_length=50)
     email = models.EmailField('e-mail')
@@ -37,6 +39,7 @@ class Order(models.Model):
         return total_cost - total_cost * (self.discount / Decimal('100'))
 
 class OrderItem(models.Model):
+    """ docs. """
     order = models.ForeignKey(Order,
                               related_name='items',
                               on_delete=models.CASCADE)
