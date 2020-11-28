@@ -1,14 +1,18 @@
+""" Docs. """
+
 from django.contrib import admin
 from .models import Category, Product
 
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
+    """ docs. """
     list_display = ['name', 'slug']
 def get_prepopulated_fields(self, request, obj=None):
     return {'slug': ('name',)}
 
 @admin.register(Product)
 class ProductAdmin(admin.ModelAdmin):
+    """ docs. """
     list_display = ['name', 'slug', 'price',
                     'available', 'created', 'updated']
     list_filter = ['available', 'created', 'updated']

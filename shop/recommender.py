@@ -1,3 +1,5 @@
+""" Docs. """
+
 import redis
 from django.conf import settings
 from .models import Product
@@ -8,7 +10,7 @@ r = redis.StrictRedis(host=settings.REDIS_HOST,
                       db=settings.REDIS_DB)
 
 class Recommender(object):
-
+    """ docs. """
     def get_product_key(self, id):
         return 'product:{}:purchased_with'.format(id)
 

@@ -5,6 +5,7 @@ from django.urls import reverse
 
 
 class Category(models.Model):
+    """ docs. """
     name = models.CharField(max_length=200, default='soska', db_index=True)
     slug = models.SlugField(max_length=200, default='soska', unique=True)
 
@@ -21,6 +22,7 @@ class Category(models.Model):
         return reverse('shop:product_list_by_category', args=[self.slug])
 
 class Product(models.Model):
+    """ docs. """
     category = models.ForeignKey(Category,
                                  related_name='products',
                                  on_delete=models.CASCADE)
