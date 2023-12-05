@@ -1,1 +1,1 @@
-# my_shopus
+# my_store
